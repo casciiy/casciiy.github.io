@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2022/11/05/libelf%E5%BC%80%E6%BA%90%E5%BA%93/"/>
-    <url>/2022/11/05/libelf%E5%BC%80%E6%BA%90%E5%BA%93/</url>
+    <title>libelf库的使用</title>
+    <link href="/2022/11/05/libelf%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <url>/2022/11/05/libelf%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     
-    <content type="html"><![CDATA[<h2 id="libelf开源库"><a href="#libelf开源库" class="headerlink" title="libelf开源库"></a>libelf开源库</h2><h3 id="下载编译与安装libelf库"><a href="#下载编译与安装libelf库" class="headerlink" title="下载编译与安装libelf库"></a>下载编译与安装libelf库</h3><p>从git仓库获取最先版本的libelf库源码，并进行本地编译安装。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell"><br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>ELF文件是Linux系统下的一类重要文件，可执行文件、共享库文件、目标文件等都是ELF格式的文件，本文主要介绍如何使用<code>libelf</code>库对elf文件进行解析。</p><h2 id="下载与编译安装"><a href="#下载与编译安装" class="headerlink" title="下载与编译安装"></a>下载与编译安装</h2><p>从git仓库下载最新版本的libelf库源码，进行编译与安装。</p><h3 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs shell">[root@localhost elf]# git clone  https://github.com/WolfgangSt/libelf.git<br>Cloning into &#x27;libelf&#x27;...<br>remote: Enumerating objects: 129, done.<br>remote: Total 129 (delta 0), reused 0 (delta 0), pack-reused 129<br>Receiving objects: 100% (129/129), 181.27 KiB | 697.00 KiB/s, done.<br>Resolving deltas: 100% (44/44), done.<br><br></code></pre></td></tr></table></figure><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">[root@localhost libelf]# cd libelf/<br>[root@localhost libelf]# ./configure    //这里可以使用--prefix=&lt;想要安装到的路径&gt;，这里我就直接使用默认路径<br></code></pre></td></tr></table></figure><h3 id="编译与安装"><a href="#编译与安装" class="headerlink" title="编译与安装"></a>编译与安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">[root@localhost libelf]# make<br>[root@localhost libelf]# make install<br></code></pre></td></tr></table></figure>]]></content>
     
     
     
