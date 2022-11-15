@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>kprobe分析</title>
+    <link href="/2022/11/15/kprobe%E5%88%86%E6%9E%90/"/>
+    <url>/2022/11/15/kprobe%E5%88%86%E6%9E%90/</url>
+    
+    <content type="html"><![CDATA[<p>kprobe机制分析。</p><span id="more"></span>]]></content>
+    
+    
+    <categories>
+      
+      <category>kprobe</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+      <tag>kprobe</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>libelf库的使用</title>
     <link href="/2022/11/05/libelf%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <url>/2022/11/05/libelf%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
